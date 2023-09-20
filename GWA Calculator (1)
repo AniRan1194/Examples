@@ -1,0 +1,112 @@
+#include <stdio.h>
+#include <stdlib.h>
+//#include <float.h>
+
+
+int main()
+{
+  float grade, total, GWA, totalG;
+  int  unit=3,unit2=5, unit3=2,unit4=0, unitsG=0;
+  
+  printf("General Weighted Average (GWA) Calculator\n\n");
+  
+ //Subj Code   Units.    Grades (INPUT).  UNITS*GRADES
+ //CCS 101.     3            1.25.           3.75
+ //CCS 102.     5            1.50.           7.50
+ //EMC 101.     3            1.25.           3.75
+ //GEC 001.     3            1.75.           5.25
+ //GEC 004.     3            1.25.           3.75
+ //PATHFit 1.   2            1.00.           2.00
+ //NSTP 111.    0            1.00.           0.00
+ //TOTAL.      19.                           26.00
+ 
+//P1 Get all grades
+//P2 Multiply grades to units 
+//P3 Add all units
+//P4 Add all P2
+//P4 Divide P4 by P3  
+//P5 Display GWA
+
+  printf("CSS 101: ");
+  scanf("%f", &grade);
+ // printf("%d", &unit);
+ printf("Grade: %.2f\n\n", grade *= unit);
+  unitsG += unit;
+  total += grade;
+ // grade / GWA;
+ 
+
+  printf("CCS 102: ");
+  scanf("%f", &grade);
+  //printf("Units: ");
+  //printf("%d", &unit2);
+  printf("Grade: %.2f\n\n", grade *= unit2);
+  unitsG += unit2;
+  total += grade;
+ // grade / GWA;
+  
+  
+  printf("EMC 101: ");
+  scanf("%f", &grade);
+ // printf("Units: ");
+ // printf("%d", &unit);
+  printf("Grade: %.2f\n\n", grade *= unit);
+  unitsG += unit;
+  total += grade;
+ // grade / GWA;
+  
+  //printf("%.2f", grade += total);
+ // scanf("%.2f", grade += total);
+   // grade += total;
+  
+  
+  printf("GEC 001: ");
+  scanf("%f", &grade);
+  //printf("Units: ");
+ // printf("%d", &unit);
+  printf("Grade: %.2f\n\n", grade *= unit); 
+  unitsG += unit;
+  total += grade;
+ // grade / GWA;
+ 
+  
+  
+  printf("GEC 004: ");
+  scanf("%f", &grade);
+  //printf("Units: ");
+ // printf("%d", &unit);
+  printf("Grade: %.2f\n\n", grade *= unit);
+  unitsG += unit;
+  total += grade;
+  //grade / GWA;
+  
+  
+  
+  printf("PATHFit 1: ");
+  scanf("%f", &grade);
+  //printf("Units: ");
+ // printf("%d", &unit3);
+  printf("Grade: %.2f\n\n", grade *= unit3); 
+  unitsG += unit3;
+  total += grade;
+ 
+ 
+ 
+  printf("NSTP 111: ");
+  scanf("%f", &grade);
+  //printf("Units: ");
+ // printf("%d", &unit4);
+  printf("Grade: %.2f\n\n", grade *= unit4); 
+  unitsG += unit4;
+  total += grade;
+//  grade / GWA;
+
+  
+  printf("Total units: %d\n", unitsG);
+  grade += total;
+  printf("Total Grades: %.2f\n", grade);
+  GWA = grade / unitsG;
+  printf("GWA: %.2f\n", GWA);
+  
+  return 0;
+}
