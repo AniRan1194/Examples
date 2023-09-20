@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  //declare two integer variables
+  //num1
+  //num2
+
+int num1;
+int num2;
+
+printf("Enter num1: ");
+ scanf("%d", num1);
+printf("Enter num2: ");
+ scanf("%d", num2);
+
+//expression = formula/mathematical notations
+int sum = num1 = num2;
+ printf("Sum: %d\n", sum);
+
+int difference = num1 - num2;
+ printf("Difference: %d\n", difference);
+
+int product = num1 * num2;
+ printf("Product: %d\n", product);
+
+float quotient = (float)num1 / (float)num2; //Type Casting = conversion of data types
+ printf("Quotient: %.2f\n", quotient);
+
+return 0;
+}
