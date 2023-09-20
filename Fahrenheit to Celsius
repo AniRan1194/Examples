@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  float fahrenheit;
+  int celsius;
+
+printf("Enter Fahrenheit: ");
+scanf("%d", &fahrenheit);
+
+float output = (fahrenheit - 32) * (float) 5 / (float) 9;
+printf("Output: %f\n", output);
+
+return 0;
+}
