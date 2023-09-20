@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   float grade, total;
+printf("General Wightes Average (GWA) Calculator\n\n");
+
+ printf("CSS 101: ");
+ scanf("%f", &grade);
+ grade += 3;
+ total += grade;
+
+ printf("CSS 102: ");
+ scanf("%f", &grade);
+ grade += 5;
+ total += grade;
+
+ printf("EMC 101: ");
+ scanf("%f", &grade);
+ grade += 3;
+ total += grade;
+
+ printf("GEC 001: ");
+ scanf("%f", &grade);
+ grade += 3;
+ total += grade;
+
+ printf("GEC 004: ");
+ scanf("%f", &grade);
+ grade += 3;
+ total += grade;
+
+ printf("PATHFit 1: ");
+ scanf("%f", &grade);
+ grade += 2;
+ total += grade;
+
+ printf("NSTP 111: ");
+ scanf("%f", &grade);
+ grade += 0;
+ total += grade;
+
