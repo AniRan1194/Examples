@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+  int grade;
+  
+  printf("Advance Grade Program\n\n");
+  
+  printf("Enter your grade: \n");
+  scanf("%d", &grade);
+  
+  //printf "Excellent" if grade is atleast 95 and not over 100.
+  //print "Outstanding" if grade is atleast 90 and not over 95.
+ //print "Satisfactory" if grade is atleast 85 and not over 90.
+ //print "Good" if grade is atleast 80 and not over 85.
+ //print "Passed" if grade is atleast 75 and not over 80.
+ //print "Failed" if grade is below 75 and not over 0.
+ //otherwise print "Invalid Grade".
+ 
+ if (grade >= 95 && grade <= 100) //!(grade > 100)
+   printf("Excellent");
+   
+ else if(grade >= 90 && grade < 95) //other options
+   printf("Outstanding");
+   
+ else if(grade >= 85 && grade < 90)
+   printf("Satisfactory");
+   
+ else if(grade >= 80 && grade < 85)
+   printf("Good");
+   
+ else if(grade >= 75 && grade < 80)
+   printf("Passed");
+   
+ else if(grade < 75 && grade >= 0) //(grade<0)
+   printf("Failed"); 
+ else 
+   printf("Invalid Grade");
+ 
+  return 0;
+}
