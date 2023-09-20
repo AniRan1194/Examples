@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+  int budget = 500;
+  int expense;
+  int total = 0;
+  
+printf("Simple Expense Calculator\n");
+ // Tinola Manok
+ //inputs to expense variable
+
+//Chicken
+//Sayote
+//Malunggay Leaves
+//Chicken Cubes
+//Salt
+//Pepper
+//Fish Sauce
+//Ginger
+//Garlic
+//Onion
+
+printf("Chicken: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Sayote: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Malunggay Leaves: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Chicken Cubes: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Salt: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Pepper: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Fish Sauce: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Ginger: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Garlic: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Onion: ");
+scanf("%d", &expense);
+budget -= expense;
+total += expense;
+
+printf("Total cost: %d\n", total);
+printf("Budget left: %d\n", budget);
+
+
+  return 0;
+}
