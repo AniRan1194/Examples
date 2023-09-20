@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int length;
+  int width;
+
+printf("Enter length: ");
+ scanf("%d", &length);
+
+printf("Enter width: ");
+ scanf("%d", &width);
+
+int output = length * width;
+printf("Output: %d\n", output);
+
+return 0;
+}
