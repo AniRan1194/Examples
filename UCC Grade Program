@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int grade;
+   printf("Enter a number: ");
+   scanf("%d", &grade);
+{
+   if (grade >= 99 && grade <= 100)
+    printf("1.00\n");
+     else if (grade >= 96 && grade <= 99)
+      printf("1.25\n");
+
+    else if (grade >= 93 && grade <= 96)
+     printf("1.50\n");
+
+    else if (grade >= 90 && grade <= 93)
+     printf("1.75\n");
+
+    else if (grade >= 87 && grade <= 90)
+     printf("2.00\n");
+
+    else if (grade >= 84 && grade <= 87)
+     printf("2.25\n");
+
+    else if (grade >= 81 && grade <= 84)
+     printf("2.50\n");
+
+    else if (grade >= 78 && grade <= 81)
+     printf("2.75\n");
+
+    else if (grade >= 75 && grade <= 78)
+     printf("3.00\n");
+
+    else if (grade >= 72 && grade <= 74)
+     printf("4.00\n");
+
+    else if (grade >= 71 && grade <= 0)
+     printf("5.00\n");
+
+  if (grade >= 75) {
+    if (grade > 100)
+     printf("INVALID");
+else
+     printf("PASSED");
+} else {
+   if (grade <= 75) {
+    if (grade <= -1)
+     printf("INVALID");
+else
+     printf("FAILED");
+}
+}
+
+return 0;
+}
+
+
+
+
+
+
+
+   
