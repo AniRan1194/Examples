@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+
+int main()
+{
+  
+  bool isPassed;
+  int grade;
+  
+  printf("Simple Grade Calculator!\n");
+  
+  printf("Enter your grade: "); //input 
+  scanf("%d", &grade);
+  
+  //Relational
+  //grade must be 75 and above
+  //isPassed = grade >= 75;
+  //printf("Result: %d \n", isPassed);
+  
+  //make it compound (logical operator)
+// grade must be 75 AND atleast 100
+  isPassed = grade >= 75 && grade <= 100;
+  //105 >= 75? 1 &&  105 <= 100?:  0 = 0
+  //is 89 >= 75? 1 &&  89 <= 100?: 1 = 1
+  //is 67 >= 75? 0 (no need to proceed)
+  printf("Result: %d \n", isPassed);
+  
+  
+  
+  return 0;
+}
